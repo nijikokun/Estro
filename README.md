@@ -5,7 +5,7 @@
 
 Estro is a tiny Extended String Object helper enables you to get more out of the string class.
 
-Use It:
+Usage:
 
     var string = "Hello";
 
@@ -17,7 +17,8 @@ Use It:
     if(string.contains("e")) { /* do something else */ }
     alert("  trimmed  ".trim());
 
-<h3>Features</h3>
+Extensions
+----------
 
 Estro contains the following string extensions (Unless they already exist; Estro is meant to be un-obtrusive):
 
