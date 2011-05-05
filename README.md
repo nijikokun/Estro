@@ -29,6 +29,12 @@ Estro contains the following string extensions (Unless they already exist; Estro
   * string.contains(needle) *Check to see if a string contains a given string. Returns Boolean*
   * string.trim() *Trim the string of whitespace. Returns: String*
   * string.isEmpty() *Check to see if the string is empty, and really empty. Returns Boolean*
+  * string.reverse() *Reverses string. IE: Hello -> olleH*
+  * string.repeat(n) *Repeat string n times*
+  * string.capitalize() *Capitalize each word in the string and lower the rest. Returns String*
+  * string.camelize() *CamelCase string. Returns String*
+  * string.bind(data) *Small template layer. Ex: "Hi %{name}".bind({'name': 'Estro'});" Outputs: Hi Estro*
+  * string.extract(regex, n) *Extract data into an array based on regex and group(n). Returns Array*
 
 <h3>In the future?</h3>
 
