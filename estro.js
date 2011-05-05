@@ -9,9 +9,8 @@
  */
 
 if(!String.prototype.isEmpty){
-    String.prototype.isEmpty() = function(){
-        if(!this ||this == '' || this == undefined || this == NaN || this == null || this.length < 1 || this == 'undefined' || (typeof this) == undefined || (typeof this) == NaN) return false;
-        return true;
+    String.prototype.isEmpty = function(){
+        return (!this ||this == '' || this == undefined || this == NaN || this == null || this.length < 1 || this == 'undefined' || (typeof this) == undefined || (typeof this) == NaN);
     };
 }
 
