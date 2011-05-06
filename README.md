@@ -17,7 +17,7 @@ Usage:
     if (string.contains("e")) alert(string + " contains an e! Who knew?");
     alert("  trimmed  ".trim());
 
-You can view a demo <a href="http://jsfiddle.net/kYsWv/">here</a>.
+You can view a demo <a href="http://jsfiddle.net/kYsWv/1/">here</a>.
     
 Extensions
 ----------
