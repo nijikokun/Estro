@@ -9,14 +9,16 @@ Usage:
 
     var string = "Hello";
 
-    if(!string.isEmpty()) { alert(string); }
-    if(string.equals("Hello")) { alert("Hi :D!"); }
-    if(string.equalsIgnoreCase("hello")) { alert("Hello again!"); }
-    if(string.startsWith("H")) { alert("Starts with H!"); }
-    if(string.endsWith("ello")) { alert("Ends with ello!"); }
-    if(string.contains("e")) { /* do something else */ }
+    if (!string.isEmpty()) alert(string);
+    if (string.equals("Hello")) alert("Hi :D!");
+    if (string.equalsIgnoreCase("hello")) alert("Hello again!");
+    if (string.startsWith("H")) alert("Starts with H!");
+    if (string.endsWith("ello")) alert("Ends with ello!");
+    if (string.contains("e")) alert(string + " contains an e! Who knew?");
     alert("  trimmed  ".trim());
 
+You can view a demo <a href="http://jsfiddle.net/kYsWv/">here</a>.
+    
 Extensions
 ----------
 
@@ -32,7 +34,7 @@ Estro contains the following string extensions (Unless they already exist; Estro
   * string.reverse() *Reverses string. IE: Hello -> olleH*
   * string.repeat(n) *Repeat string n times*
   * string.capitalize() *Capitalize each word in the string and lower the rest. Returns String*
-  * string.camelize() *CamelCase string. Returns String*
+  * string.camelize() *CamelCase string, hello-there -> helloThere. Returns String*
   * string.bind(data) *Small template layer. Ex: "Hi %{name}".bind({'name': 'Estro'});" Outputs: Hi Estro*
   * string.extract(regex, n) *Extract data into an array based on regex and group(n). Returns Array*
 
