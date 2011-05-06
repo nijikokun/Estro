@@ -7,8 +7,9 @@
  * @copyright: 2011 (c) Nijikokun
  * @license: GNUv3 Affero License <http://www.gnu.org/licenses/agpl-3.0.html>
  */
-
+ 
 (function(){
+    var headless = (typeof module !== 'undefined');
     var methods = {
         isEmpty: function(){
             return (!this || this === '' || this === undefined || this === null || this.length < 1 || this === 'undefined' || (typeof this) === undefined);
@@ -30,6 +31,6 @@
     };
     
     for (var method in methods) {
-        if(!String.prototype[method]) String.prototype[method] = methods[method];
+        if(headless) { String.prototype.__defineGetter__(method, methods[method]); } else { if(!String.prototype[method]) String.prototype[method] = methods[method]; }
     }
 })();
