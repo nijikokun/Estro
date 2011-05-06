@@ -8,5 +8,5 @@
     "type": "git",
     "url": "https://github.com/Nijikokun/Estro.git"
   },
-  "main": "./estro.js",
+  "main": "./estro.js"
 }
