@@ -1,5 +1,5 @@
 {
-  "name": "Estro",
+  "name": "estro",
   "description": "Extended String Object, Gain more from your strings.",
   "version": "0.1.4",
   "homepage": "https://github.com/Nijikokun/Estro",
@@ -8,5 +8,5 @@
     "type": "git",
     "url": "https://github.com/Nijikokun/Estro.git"
   },
-  "main": "./estro.js"
+  "main": "estro"
 }
