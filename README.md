@@ -24,6 +24,7 @@ Extensions
 
 Estro contains the following string extensions (Unless they already exist; Estro is meant to be un-obtrusive):
 
+  * string.compareTo(string) *Compare one string to another*
   * string.equals(string) *Check one string against another. Returns: Boolean*
   * string.equalsIgnoreCase(string) *Check one string against another without case sensitivity. Returns: Boolean*
   * string.startsWith(prefix) *Check to see if a string starts with the given string. Returns: Boolean*
