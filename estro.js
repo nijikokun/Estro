@@ -19,7 +19,7 @@
         repeat: function(n){ return new Array(n?n+1:2).join(this); },
         reverse: function () { return this.split('').reverse().join(''); },
         capitalize: function() { var w=this.split(' '); for(var i=0;i<w.length;i++) { w[i]=w[i].charAt(0).toUpperCase()+w[i].substring(1).toLowerCase(); } return w.join(" "); },
-        camelize: function() { this.replace(/\-(\w)/g, function($0, $1) { return $1.toUpperCase(); }); },
+        camelize: function() { return this.replace(/\-(\w)/g, function(a, b) { return b.toUpperCase(); }); },
         bind: function (d) { var m,o=this; while (m=/%\{\s*([^\}\s]+)\s*\}/.exec(o)) { o=o.replace(m[0], d[m[1]] || '??'); } return o; },
         extract: function(rgx, n) { n=(n === undefined)?0:n; if (!rgx.global) { return this.match(rgx)[n] || ''; } var m,e=[]; while((m=rgx.exec(this))) { e[e.length] = m[n] || ''; } return e; }
     };
