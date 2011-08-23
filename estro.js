@@ -139,8 +139,8 @@
             });
         },
         
-        camilize: function() {
-            return input.replace(/\W+(.)/g, function (m, l) {
+        camelize: function() {
+            return this.replace(/\W+(.)/g, function (m, l) {
                 return l.toUpperCase();
             });
         },
