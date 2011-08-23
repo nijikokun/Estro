@@ -199,5 +199,5 @@
     
     for (var e in Estro)
         if (!String.prototype[e]) 
-            String.prototype[e] = methods[e];
+            String.prototype[e] = Estro[e];
 })();
