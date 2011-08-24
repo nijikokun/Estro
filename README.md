@@ -55,7 +55,6 @@ Estro contains the following string extensions (Unless they already exist; Estro
   * string.extract(regex, n) *Extract data into an array based on regex and group(n). Returns Array*
   * string.toInt() *Converts the string into its numeric value. Returns Integer*
   * string.toHash() *Converts the string it a hashcode, based on Java. Returns Integer*
-  * string.guid() *Generates Unique ID string*
 
 <h3>In the future?</h3>
 
