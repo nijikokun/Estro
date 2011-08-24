@@ -192,7 +192,7 @@
         toHash: function() {
             var h = 0, l = this.length;
             for (var i = 0; i < l; i++)
-                h = 31 * h + this.charAt(i);
+                h = 31 * h + this.charCodeAt(c);
             return h; 
         }
     };
