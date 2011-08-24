@@ -259,5 +259,5 @@
     
     for (var e in Estro.String)
         if (!String.prototype[e]) 
-            String.prototype[e] = Estro[e];
+            String.prototype[e] = Estro.String[e];
 })();
