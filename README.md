@@ -125,6 +125,7 @@ Extensions
     'Hello'.isLowerCaseAt(1) // Returns True (Boolean)
 
 ** and more... **
+
   * string.camelize() *CamelCase string, hello there -> helloThere* Returns String
   * string.dasherize() *Hyphenates string, hello there -> hello-there* Returns String
   * string.underscore() *Underscores string, hello there -> hello_there* Returns String
