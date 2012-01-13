@@ -9,7 +9,7 @@
     // Initialize Estro Object
     // This will be our holder for all of the Prototype functions.
     var Estro = {
-        version: "2.3"
+        version: "2.4"
     };
     
     // Quick Prototype access, for looping or in-code access.
@@ -385,13 +385,13 @@
         },
         
         // Aliases
-        ord: Estro.Number.ordinalize,
-        chr: Estro.Number.charCode,
-        mod: Estro.Number.modulo,
-        clamp: Estro.Number.limit,
-        toInt: Estro.Number.toNumber,
-        toRad: Estro.Number.toRadians,
-        toDeg: Estro.Number.toDegrees
+        ord: function () { return this.ordinalize(); },
+        chr: function () { return this.charCode(); },
+        mod: function (n) { return this.modulo(n); },
+        clamp: function (m,x) { return this.limit(m,x); },
+        toInt: function () { return this.toNumber(); },
+        toRad: function () { return this.toRadians(); },
+        toDeg: function () { return this.toDegrees(); }
     };
     
     // String based functions
