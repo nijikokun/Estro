@@ -1,7 +1,7 @@
 {
   "name": "Estro",
-  "description": "Extended String Object, Gain more from your strings.",
-  "version": "0.2",
+  "description": "Extended Prototype Object",
+  "version": "2.3",
   "homepage": "https://github.com/Nijikokun/Estro",
   "author": "Nijikokun <nijikokun@gmail.com> (@nijikokun)",
   "repository": {

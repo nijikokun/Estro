@@ -3,8 +3,10 @@
       /--   (   /  _   __
     (/____//_)_(__/ (_(_)
 
-Estro is a *tiny* Extended String Object helper that enables you to get more out of the native String functionality in javascript.
+Estro is a *tiny* Extended Prototype Object helper that enables you to get more out of the native functionality in javascript.
 It doesn't override any Prototypal functions, just extends it where it can. So if you have pre-made extentions, it will respect them.
+
+Beautiful Sugar Syntax. Made right.
 
 Site & Annotated Source
 --------------
@@ -20,6 +22,25 @@ You can view a demo <a href="http://jsfiddle.net/kYsWv/1/">here</a>.
     
 Extensions
 ----------
+
+<h3>Object</h3>
+    hop(item) -- Quick access hasOwnProperty
+    each(fn, context) -- Loops through each property and applies fn
+    cacheResults(results) -- Useful for Functions, math equations and the like.
+    isEmpty, isElement, isNumber, isArray, isString, isObject, isBoolean
+    isNaN, isNull, isUndefined, isArguments, isRegExp, isString, isDate
+    toArray
+
+<h3>Array</h3>
+    each, some, every, map, filter, reduce, reduceRight
+    
+<h3>Number</h3>
+    abs, round(precision), ceil, floor, modulo(n) / mod, pad(place, sign, base)
+    map(fromMin, fromMax, toMin, toMax), limit(min, max) / clamp
+    isEven, isOdd, isMultipleOf(n)
+    toNumber / toInt, toRadians / toRad, toDegrees / toDeg
+    format(places, thousands, decimal)
+    ordinalize / ord, charCode / chr
 
 <h3>Strings</h3>
 
@@ -90,6 +111,11 @@ Extensions
 **insert(String, Indice)**: Insert string starting at `Indice`
 
     'hllo'.insert('e', 1) // Returns 'hello' (String)
+    
+**pop(Amount)**: Pop characters from start of the string. `Amount` defaults to 1.
+
+    'hhello'.pop() // Returns 'hello' (String)
+    'hello you'.pop(6) // Returns 'you' (String)
 
 **chop(Amount)**: Pop characters from end of the string. `Amount` defaults to 1.
 
@@ -133,10 +159,13 @@ Extensions
   * string.extract(regex, n) *Extract data into an array based on regex and group(n). Returns Array*
   * string.toInt() *Converts the string into its numeric value. Returns Integer*
   * string.toHash() *Converts the string it a hashcode, based on Java. Returns Integer*
+  * string.pad(str, left, right)
+  * string.padLeft(str, amount)
+  * string.padRight(str, amount)
 
 Licensing?
 ----------
 
-Copyright Nijikokun 2011 <nijikokun@gmail.com>
+Copyright Nijikokun 2011-2012 <nijikokun@gmail.com>
 
 AOL License <http://aol.nexua.org>
