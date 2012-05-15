@@ -9,7 +9,7 @@
     // Initialize Estro Object
     // This will be our holder for all of the Prototype functions.
     var Estro = {
-        version: "2.4"
+        version: "2.5"
     };
     
     // Quick Prototype access, for looping or in-code access.
@@ -666,13 +666,14 @@
     // Setup Exceptions
     for (var e in Exceptions) {
         if (Exceptions.hasOwnProperty(e)) {
-            // Instance in the window for try catch if wanted.
-            if(window && !window[e])
-                window[e] = Exceptions[e];
-            
-            // Instance with Error.prototype
-            if(window[e] == Exceptions[e])
-                window[e].prototype = Error.prototype;
+            if (typeof window !== 'undefined') {
+                if(window && !window[e])
+                    window[e] = Exceptions[e];
+                
+                // Instance with Error.prototype
+                if(window[e] == Exceptions[e])
+                    window[e].prototype = Error.prototype;
+            }
             
             // Same for the original.
             Exceptions[e].prototype = Error.prototype;
