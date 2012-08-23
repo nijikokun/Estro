@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/Nijikokun/Estro.png)](http://travis-ci.org/Nijikokun/Estro)
      ______              
     (  /        _/_      
       /--   (   /  _   __
